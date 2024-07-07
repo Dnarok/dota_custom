@@ -3,6 +3,13 @@
  * front-end (Panorama) and back-end (VScripts). Only put stuff in here you need to share.
  */
 
+interface CustomNetTableDeclarations
+{
+    modifiable_ability_data : {
+        data : ModifiableAbilityData
+    }
+}
+
 interface Color {
     r: number,
     g: number,

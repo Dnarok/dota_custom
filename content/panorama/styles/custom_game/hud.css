@@ -3,56 +3,46 @@
     height: 100%;
 }
 
-#ExamplePanel {
-    width: 500px;
-    height: 500px;
-    /* Using a background image already in dota */
-    background-image: url("s2r://panorama/images/compendium/international2020/compendium/dashboard_panel_bg_psd.vtex");
-
-    horizontal-align: center;
-    vertical-align: center;
+#custom_ui_button {
+    tooltip-position: bottom;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    margin-left: 16px;
+    opacity: 0.5;
+    position: 137.7px 14px 0px;
+    img-shadow: 0px 0px 3px 2 black;
+    wash-color: #cdf;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    background-image: url("s2r://panorama/images/control_icons/24px/edit.vsvg");
 }
 
-#ExamplePanel #BannerImage {
-    width: 200px;
-    height: 200px;
-    horizontal-align: center;
-    y: 40px;
+#custom_ui_button:hover {
+    opacity: 1.0;
+    wash-color: white;
 }
 
-#ExamplePanel .ExampleTitle {
-    horizontal-align: center;
-    font-size: 30px;
-    y: 260px;
+/*
+#register_concommands {
+    tooltip-position: bottom;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    margin-left: 16px;
+    opacity: 0.5;
+    position: 183.6px 14px 0px;
+    img-shadow: 0px 0px 3px 2 black;
+    wash-color: #cdf;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    background-image: url("s2r://panorama/images/control_icons/24px/duplicate.vsvg");
 }
 
-#ExamplePanel .ExampleParagraph {
-    y: 320px;
-    margin-left: 30px;
-    margin-right: 30px;
+#register_concommands:hover {
+    opacity: 1.0;
+    wash-color: white;
 }
-
-#ExamplePanel #CloseButton {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(228, 228, 228);
-    horizontal-align: center;
-    vertical-align: bottom;
-    y: -30px;
-}
-
-#ExamplePanel #CloseButton Label {
-    horizontal-align: center;
-    vertical-align: center;
-    color: black;
-}
-
-#ExamplePanel #CloseButton:hover {
-    background-color: rgb(0, 135, 245);
-}
-
-#ExamplePanel #CloseButton:hover Label {
-    color: white;
-}
-
-
+*/

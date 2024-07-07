@@ -14,7 +14,7 @@
 // To declare an event for use, add it to this table with the type of its data
 interface CustomGameEventDeclarations {
     example_event: ExampleEventData,
-    ui_panel_closed: UIPanelClosedEventData
+    ability_modified_event : ModifiableAbilityData,
 }
 
 // Define the type of data sent by the example_event event
@@ -25,5 +25,42 @@ interface ExampleEventData {
     myArrayOfNumbers: number[]
 }
 
-// This event has no data
-interface UIPanelClosedEventData {}
+declare enum CastBehavior
+{
+    INSTANT,
+    PROJECTILE,
+}
+
+interface ModifiableModifierData
+{
+    hidden : boolean,
+    debuff : boolean,
+    purgable : boolean,
+}
+
+interface ModifiableAbilityData 
+{
+    player_id : PlayerID,
+
+    ability_behavior : AbilityBehavior,
+    cast_behavior : CastBehavior,
+    unit_target_types : UnitTargetType,
+    unit_target_teams : UnitTargetTeam,
+    unit_target_flags : UnitTargetFlags,
+    cast_animation : GameActivity,
+    cast_range : number,
+    cast_point : number,
+    backswing : number,
+    ability_texture : string,
+    hidden : boolean,
+    ability_name : string,
+
+    damage : number,
+    damage_type : DamageTypes,
+    manacost : number,
+    healthcost : number,
+    goldcost : number,
+    cooldown : number,
+
+    // modifiers : ModifiableModifierData[],
+}

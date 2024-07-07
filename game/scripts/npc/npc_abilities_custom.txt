@@ -1,5 +1,14 @@
 #base "heroes/meepo.kv"
+#base "heroes/troll_berserker.kv"
 
 "DOTAAbilities"
 {
+    "modifiable_ability"
+    {
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/modifiable"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+
+        "MaxLevel"                      "1"
+    }
 }

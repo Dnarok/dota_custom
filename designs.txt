@@ -1,0 +1,120 @@
+Troll Berserker
+	Carry, Tank
+
+Q - Rallying Cry
+	The Troll Berserker belts out an inspiring cry, gaining damage and armor for every enemy unit nearby. Allies within range receive a portion of the bonus.
+
+	Radius - 350/375/400/425
+	Damage per Unit - 2/4/6/8
+	Armor per Unit - 0.5/1.0/1.5/2.0
+	Allied Effect - 50%
+	Duration - 5/6/7/8
+	Manacost - 25
+	Cooldown - 18
+
+	Talents:
+		10.1 - +50 Radius
+		10.2 - +15% Allied Effect
+		15.1 - +3 Damage per Unit
+		15.2 - +0.75 Armor per Unit
+		20.1 - +5% Magic Resistance per Unit
+		20.2 - +5 Attack Speed per Unit
+		25.1 - Strong Dispel Self (can be cast while disabled)
+		25.2 - Basic Dispel Self and Allies (cannot be cast while disabled)
+
+	Shard:
+		Now provides max health and movespeed to allies for the duration. Reduces cooldown.
+
+		Max Health Bonus - 65
+		Movespeed Bonus - 12%
+		Cooldown - 16
+
+	Scepter:
+		Increases status resistance for the duration. Enemies within range now have their stats decreased by the same amount allies are increased. Works with shard and talents. Increases duration.
+
+		Status Resistance - 25%
+		Enemy Effect - 50% (65% with Talent)
+		Duration - 7/8/9/10
+
+	Facets:
+		1 - Rallying Cry as-is.
+		2 - Rallying Cry has a 30% large radius, but can only be activated when there are 4 or more enemy units in range.
+
+W - Spiked Shield
+	The Troll Berserker proficiency with his shield allows him to sometimes counter-attack enemies, blocking incoming damage and returning a minor attack. The more enemies that are nearby, the more often he blocks and counter-attacks.
+
+		Base Block Chance - 30%
+		Block Chance per Unit - 3%/4%/5%/6%
+		Block Chance Cap - 60%
+		Damage Block - 7/14/21/28
+		Counter Attack Damage - 10%/14%/18%/22%
+		Counter Attack Cooldown - 0.2
+
+	Talents:
+		10.1 - +10% Base Block Chance/Block Chance Cap
+		10.2 - +7 Damage Block
+		15.1 - +1.5% Block Chance per Unit
+		15.2 - +8% Counter Attack Damage
+		20.1 - Triple Damage Block during Rallying Cry
+		20.2 - Double Counter Attack Damage during Rallying Cry
+		25.1 - Spiked Shield Aura (350 radius, allies receive the base effect (no talents/shard/scepter/facets))
+		25.2 - Counter Attacks procs Modifiers
+
+	Shard:
+		Counter Attacks apply stacks that increase Counter Attack damage for a time. Reduces Counter Attack cooldown.
+
+		Counter Attack Damage per Stack - 5%
+		Max Stacks - 5
+		Stack Duration - 4
+		Counter Attack Cooldown - 0.1
+
+	Scepter:
+		Can now be activated to enter an offensive stance, losing the damage block and counter-attack. While active, all of Troll Berserker's attacks will be followed by an immediate second attack. Second attack damage is based on Counter Attack Damage, and is affected by relevant talents and shard.
+
+		Counter Attack Damage Multiplier - 1.75
+		Duration - 8
+		Cooldown - 25
+		Manacost - 25
+
+	Facets:
+		1 - Spiked Shield as-is.
+		2 - Spiked Shield now instead procs when enemies within 350 radius attack an ally, reducing damage dealt to the ally and counter-attacking the enemy. Counter Attack cooldown increased. Talent 25.1 changed.
+
+			Radius - 350
+			Counter Attack Cooldown - 0.3
+			Shard Counter Attack Cooldown - 0.15
+			Talent 25.1 - Ally Counter Attacks When Blocked For (1s Cooldown, full damage, procs modifiers)
+
+E - Brutal Strike
+	The Troll Berserker occasionally strikes violently, dealing critical damage and disarming the enemy for a short time.
+
+		Crit Chance - 15%/20%/25%/30%
+		Crit Damage - 160%/170%/180%/190%
+		Disarm Duration - 0.75/1.0/1.25/1.5
+		Disarm Cooldown - 5 (per-unit)
+
+	Talents:
+		10   - -1s Disarm Cooldown
+		15.1 - +8% Crit Chance
+		15.2 - +0.5 Disarm Duration
+		20.1 - Double Crit Chance during Rallying Cry
+		20.2 - Double Disarm Duration during Rallying Cry
+		25   - +50% Crit Damage
+
+	Shard:
+		Every Brutal Strike Taunt against a unit increases the duration of the next Brutal Strike Taunt.
+
+		Taunt Duration per Stack - 0.5
+		Max Stacks - 3
+		Stack Duration - 8
+
+	Scepter:
+		When Troll Berserker kills a unit with a Brutal Strike Crit, permanently increase its Crit damage. Lose some of the stacks on death.
+
+		Crit Damage per Stack - 2%
+		Max Stacks - 50
+		Stacks Lost on Death - 50%
+
+	Facets:
+		1 - Brutal Strike as-is.
+		2 - 

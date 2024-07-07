@@ -1,0 +1,538 @@
+Troll Berserker
+
+    Innate - Relentless
+        The lower the Troll Berserker's health is, the higher his status and magic resistance.
+
+        Health Percentage For Max - 20%
+        Maximum Resistances - 50%
+
+    Q - Rallying Cry
+        The Troll Berserker belts out an inspiring call, gaining damage and armor based on the amount of enemies nearby. Allies within range receive a reduced effect.
+
+        Damage Per Unit - 2/4/6/8
+        Armor Per Unit - 0.5/1.0/1.5/2.0
+        Allied Effect - 50%
+        Radius - 350/375/400/425
+        Duration - 5/6/7/8
+        Manacost - 20
+        Cooldown - 18
+
+        Talents
+            10 - +20% Allied Effect
+            15 - +3 Damage Per Unit
+            20 - +5 Attack Speed Per Unit
+            25 - Strong Dispel Self (can be cast while stunned)
+
+        Shard
+            Now provides max health and movement speed per unit. Reduces cooldown.
+
+            Max Health Per Unit - 10
+            Movement Speed Per Unit - 3%
+            Cooldown - 16
+
+        Scepter
+            Now provides status resistance. Applies negative debuffs to all enemies in range opposite to the buffs applied to allies. Increases duration.
+
+            Status Resistance - 25%
+            Enemy Effect - 50% (affected by talent)
+            Duration - 7/8/9/10
+
+        Facet - Verbal Assault
+            Stuns nearby enemies when cast, but has a weaker effect on allies.
+
+            Stun Duration - 0.8/1.2/1.6/2.0
+            Allied Effect - 40%
+
+    W - Spiked Shield
+        When attacked, the Troll Berserker has a chance to retaliate, blocking some of the damage and dealing a counter attack. Chance increases the more enemies there are nearby, up to a cap. Can only counter attack targets within the radius.
+
+        Base Block Chance - 30%
+        Block Chance Per Unit - 3%/4%/5%/6%
+        Maximum Block Chance - 60%
+        Damage Block - 8/12/16/20
+        Counter Attack Damage - 16%/20%/24%/28%
+        Counter Attack Cooldown - 0.2
+        Radius - 300
+
+        Talents
+            10 - +1.5% Block Chance Per Unit
+            15 - +6 Damage Block
+            20 - +15% Counter Attack Damage
+            25 - Counter Attack Procs Modifiers
+
+        Shard
+            Increases the Damage Block and Counter Attack Damage while affected by Rallying Cry. Reduces the counter attack cooldown.
+
+            Rallying Cry Multiplier - 2
+            Counter Attack Cooldown - 0.1
+
+        Scepter
+            Can now be activated, disabling the damage block and counter attacks. While active, all of the Troll Berserker's attacks will be followed by an increased damage counter attack, following the counter attack cooldown.
+
+            Active Counter Attack Damage - 50% (affected by talent)d
+            Duration - 6
+            Manacost - 25
+            Cooldown - 25
+
+        Facet - Courserhide Shield
+            Can now block all types of damage, but chance is reduced.
+
+            Base Block Chance - 20%
+            Block Chance Per Unit - 2.5%/3.125%/4.16%/5%
+            Maximum Block Chance - 45%
+
+    E - Brutal Strike
+        The Troll Berserker has a chance to critically strike, dealing additional damage and forcing the enemy to fight back. The same unit cannot be taunted again for some time.
+
+        Critical Chance - 15%/20%/25%/30%
+        Critical Damage - 175%
+        Taunt Duration - 0.5/0.75/1.0/1.25
+        Taunt Cooldown - 5
+
+        Talents
+            10 - +0.25 Taunt Duration
+            15 - +7.5% Critical Chance
+            20 - +35% Critical Damage
+            25 - -3.5s Taunt Cooldown
+
+        Shard
+            Critical strikes now apply a stack that increases the damage of following critical strikes, up to a maximum amount of stacks.
+
+            Critical Damage Per Stack - 10%
+            Maximum Stacks - 5
+            Stack Duration - 4
+
+        Scepter
+            Grants a new spell, Brutal Flurry.
+
+            Brutal Flurry
+            Unleashing his rage, the Troll Berserker delivers multiple fast attacks against a target, each one guaranteed to be a critical strike. However, each strike will deal a portion of its damage back to the Troll Berserker.
+
+            Flurry Strikes - 3/4/5/6
+            Bonus Attack Speed - 500
+            Return Damage - 20%
+            Cast Range - 150
+            Manacost - 25
+            Cooldown - 20
+
+        Facet - Calculated Brutality
+            Brutal Strike is now cooldown based instead of chance based. Critical damage is improved, and instead of taunting it now stuns.
+
+            Critical Cooldown - 5.5/4.5/3.5/2.5
+            Critical Damage - 200%
+            Stun Duration - 0.5/0.75/1.0/1.25
+            Stun Cooldown - 5
+
+            Talent 10 - +0.25 Stun Duration
+            Talent 15 - -0.5s Critical Cooldown
+            Talent 20 - +40% Critical Damage
+            Talent 25 - -2.5s Stun Cooldown
+
+    R - Mass Taunt
+        The Troll Berserker calls out a challenge to all nearby enemies, forcing them to attack him and gaining bonus damage for each affected enemy. At the end of the taunt, deal a portion of all damage taken to enemies within range.
+
+        Duration - 3/4/5
+        Damage Per Unit - 5%
+        Return Damage - 20%/25%/30%
+        Radius - 325/400/475
+        Manacost - 30/35/40
+        Cooldown - 25
+
+        Talents
+            10 - +2% Damage Per Unit
+            15 - +15% Return Damage
+            20 - +1.5s Duration
+            25 - +175 Radius
+
+        Shard
+            Enemies affected by Mass Taunt deal less damage. Return damage is now based on damage taken before reductions.
+
+            Outgoing Damage Reduction - 25%
+
+        Scepter
+            Can now be alt-cast as Mass Fear. When activated, all enemies within radius are feared and slowed instead of taunted. At the end of the fear, affected units will take additional damage based on a portion of the damage they received while feared.
+
+            Enemy Return Damage - 20%/25%/30% (affected by talent)
+            Movement Slow - 30%
+
+        Facet - None
+
+Troll Priest
+
+    Innate - Ancient Blessings
+        All of the Troll Priest's spells apply stacks of Blessing, which provide health regen and armor for a short time.
+
+        Health Regen Per Stack - 0.5
+        Armor Per Stack - 0.25
+        Stack Duration - 5
+
+    Q - Bless
+        The target unit is infused with energy, healing them and adding stacks of Blessing.
+
+        Heal - 15
+        Blessing Stacks - 4/6/8/10
+        Manacost - 15/18/21/24
+        Cooldown - 8/7/6/5
+        Cast Range - 400
+        
+        Talents
+            10 - +150 Cast Range
+            15 - +10 Heal
+            20 - +4 Blessing Stacks
+            25 - -3.5s Cooldown
+
+        Shard
+            Now blesses an additional random ally within range, the Troll Priest included. Reduces the manacost by 5.
+
+            Additional Casts - 1
+            Manacost - 10/13/16/19
+
+        Scepter
+            Blessing stacks added by Bless have increased duration and potency. Bless adds 2 stacks of this enhanced Blessing to all allies within 350 range of the target.
+
+            Bonus Duration - 2.5
+            Bonus Health Regen - 0.25
+            Bonus Armor - 0.125
+
+        Facet - Harm
+            Bless can now be cast on enemies, dealing damage and inflicting Harming stacks that are equivalent to Blessing stacks, but negative.
+
+    W - Cleansing Wave
+        The Troll Priest unleashes a wave of healing energy, giving Blessing stacks to all allies hit. When the wave ends, the Troll Priest receives mana based on the number of allies hit. Allies receive a portion of the mana. 
+
+        Blessing Stacks - 3/6/9/12
+        Mana Per Unit - 2/4/6/8
+        Allied Effect - 50%
+        Wave Width - 230
+        Wave Distance - 800
+        Wave Travel Speed - 400
+        Manacost - 30
+        Cooldown - 16
+
+        Talents
+            10 - +2 Mana Per Unit
+            15 - +3 Blessing Stacks
+            20 - +30% Wave Size (Width/Distance/Travel Speed)
+            25 - -8s Cooldown
+
+        Shard
+            Allies hit are now basic dispelled. Increases the portion of mana allies receive.
+
+            Allied Effect - 75%
+
+        Scepter
+            Enemies hit by the wave receive stacks of Harming that are equivalent to Blessing stacks, but negative.
+
+        Facet - None
+
+    E - Life Manipulation
+        The Troll Priest can always cast his spells, using his own life force to supplement the mana cost if necessary. Nearby allies receive a portion of the mana and health that the Troll Priest uses to cast his spells.
+
+        Health Per Manacost - 2
+        Radius - 350/400/450/500
+        Allied Restore - 25%/30%/35%/40%
+
+        Talents
+            10 - +150 Radius
+            15 - +20% Allied Restore
+            20 - -1 Health Per Mana - Does not affect the amount of health that allies receive.
+            25 - Ancestral Protection Aura - Allies can now benefit from the casting portion of Ancestral Protection.
+
+        Shard
+            Can now be toggled, always spending the health cost while increasing outgoing heal amplification. Increases the amount allies restore.
+
+            Heal Amplification - 15%
+            Allied Restore - 35%/40%/45%/50%
+
+        Scepter
+            Spells will now take a portion of their cost from the lowest health enemy within range. Costs taken from enemies have an increased allied restore amount.
+
+            Enemy Cost - 50%
+            Allied Restore Multiplier - 2
+
+        Facet - Death Trick
+            When the Troll Priest takes lethal damage, he will instead burn mana at an increased Health Per Manacost rate.
+                Works with the scepter effect.
+
+            Health Per Manacost Multiplier - 2
+
+    R - Greater Ritual
+        The Troll Priest begins to channel, summoning an ancestral spirit to help in the fight. The spirit provides Blessing stacks to allies, and Harm stacks to enemies, in a growing area. At the end of the channel, the spirit consumes all of both stacks within range, instantly healing or harming the affected unit for their remaining amounts.
+
+        Channel Duration - 5/6/7
+        Base Radius - 300
+        Radius Per Second - 50
+        Blessing Stacks Per Second - 2
+        Harm Stacks Per Second - 1/2/3
+        Manacost - 50
+        Cooldown - 30/28/26
+
+        Talents
+            10 - +100/+15 Base/Per Second Radius
+            15 - +1 Blessing Stacks Per Second
+            20 - +2 Harm Stcaks Per Second
+            25 - +3s Channel Duration
+
+        Shard
+            No longer needs to be channeled. Greater Ritual will end when the Troll Priest is stunned or silenced. Reduces the cooldown by 5.
+
+        Scepter
+            The ancestral spirit now attacks the closest enemy within its radius, applying additional stacks of Harm.
+
+            Attack Interval - 1
+            Attack Damage - 40
+            Harm Stacks - 3
+
+        Facet - Generational Trauma
+            The Troll Priest now receives Harm stacks instead of Blessing stacks, but allies and enemies receive additional Blessing and Harm stacks.
+
+            Self Harm Stacks - 2
+            Additional Stacks - 1
+
+Centaur Courser
+
+    Innate - Antimagic Hide
+        The Centaur Courser exudes an aura of magic resistance, with a larger effect on himself.
+
+        Radius - 450
+        Magic Resistance - 15%
+        Self Bonus - 10%
+
+    Q - Crush
+        The Centaur Courser slams down his mace, dealing damage and stunning enemies within an area in front of him. On cast, replaced by Crash for up to 3 seconds.
+
+        Radius - 225
+        Damage - 20/30/40/50
+        Stun Duration - 0.8/1.2/1.6/2.0
+        Manacost - 15/18/21/24
+        Cooldown - 14
+
+        Q2 - Crash
+            A heavy second slam that slows, and costs health instead of mana. Must be cast within 3 seconds of Crush before it disappears.
+
+            Radius - 225
+            Damage - 5/15/25/35
+            Slow Duration - 2/2.5/3/3.5
+            Movespeed Slow - 25%/35%/45%/55%
+            Healthcost - 25/30/35/40
+
+        Talents
+            10 - +75 Crush Radius
+            15 - +0.8/+1.5 Stun/Slow Duration
+            20 - +25/+10 Damage
+            25 - Third Slam - Can cast Crash a second time, with the same time limit.
+
+        Shard
+            Crash becomes stronger the longer that it is held before cast. Increases the maximum hold duration.
+
+            Max Hold Duration - 4.5
+            Time For Max Bonus - 4
+            Max Damage Bonus - 100%
+            Max Stun/Slow Bonus - 50%
+
+        Scepter
+            Crush can be toggled to cast it as a channel instead. While channeling, Crash is repeatedly cast nearby with a reduced health cost. Crash has an increased radius.
+
+            Channel Duration - 4.8
+            Crash Cast Interval - 0.8
+            Radius - 450
+            Health Cost Reduction - 50%
+            Crash Bonus Radius - 75
+
+        Facet - Crushing Defeat
+            Crush cooldown is reduced for every enemy hit by Crash.
+
+            Reduction Per Unit - 0.2
+        
+    W - Charge
+        The Centaur Courser stampedes in the chosen direction. Any enemy in the path is trampled, damaging them and reducing their attack damage.
+
+        Radius - 275
+        Damage - 15/20/25/30
+        Attack Reduction - 30%
+        Duration - 4
+        Charge Distance - 400/500/600/700
+        Charge Speed - 575
+        Manacost - 20
+        Cooldown - 18
+
+        Talents
+            10 - +10 Damage
+            15 - +200 Distance
+            20 - +125 Radius
+            25 - -7s Cooldown
+
+        Shard
+            Charge can be toggled to cast Crash on its end location. Charge can now be canceled at any time by issuing a stop order.
+
+        Scepter
+            Enemies trampled are now pulled along with the Centaur Courser, taking damage based on the amount they move. Increases the Charge Distance and Speed.
+
+            Charge Distance/Speed Multiplier - 1.25
+            Damage Per Distance - 0.1
+
+        Facet - Speed Racer
+            Charge is faster and disarms instead of reducing attack damage, but is much thinner.
+
+            Charge Speed - 700
+            Radius - 150
+
+Vhoul Assassin
+
+    Innate - Envenomed
+        When 2 or more of the Vhoul Assassin's damage over time effects are on an enemy, they all deal more damage based on the number.
+            
+            Stacks from Poisontip/Wyrmfire Spear do not count as separate effects, only the base modifier.
+
+        Bonus Damage Per Effect - 10%
+
+    Q - Poisontip Spears
+        Autocast. Applies a potent poison to the attacked enemy, dealing stacking damage over time. Each stack increases the damage of all stacks on the target.
+
+        Damage Per Second - 2/3/4/5
+        Duration - 5
+        Bonus Per Stack - 2%/2.5%/3%/3.5%
+        Cast Range - 500/550/600/650
+        Manacost - 5/6/7/8
+
+        Talents
+            10 - +150 Cast Range
+            15 - +1s Duration
+            20 - +2 Damage Per Second
+            25 - +1.5% Bonus Per Stack
+
+        Shard
+            Affected targets have their base armor reduced by the same percentage as the stack bonus. Now deals physical damage.
+
+        Scepter
+            Reduces the manacost. Each stack increases attack speed against the target, up to a max.
+
+            Manacost - 3/4/5/6
+            Attack Speed Per Stack - 5
+            Maximum Attack Speed - 75
+
+        Facet - Wyrmfire Spears
+            Replaces ability. Applies a burning fire to the attacked enemy, dealing stacking damage over time. When first applied, deals an additional instance of damage.
+
+            Damage - 2/3/4/5
+            Duration - 7
+            Cast Range - 500/550/600/650
+            Manacost - 5/6/7/8
+
+            Talents
+                10 - +150 Cast Range
+                15 - +1s Duration
+                20 - +2 Damage Per Second
+                25 - Additional Initial Instance
+
+            Shard
+                Affected targets have their armor reduced per stack. Now deals physical damage.
+
+                Armor Per Stack - 1
+
+            Scepter - Same.
+
+    W - Crippling Dart
+        Unit target. Strikes the enemy with a deadly dart, reducing their movement and attack speed, and dealing damage over time. When the effect ends, the target is stunned for a short time.
+
+        Damage Per Second - 4/6/8/10
+        Duration - 5
+        Movement Slow - 14%/21%/28%/35%
+        Attack Slow - 20/30/40/50
+        Stun Duration - 0.8/1.0/1.2/1.4
+        Cast Range - 400/500/600/700
+        Manacost - 25
+        Cooldown - 12
+
+        Talents
+            10 - +7%/+10 Movement/Attack Slow
+            15 - +3 Damage Per Second
+            20 - +0.7 Stun Duration
+            25 - -6s Cooldown
+
+        Shard
+            Now slows turn rate and cast time. If a target dies while affected by the damage over time, the nearest enemy within the cast range from them is stunned instead.
+
+            Turn Rate Slow - 35%
+            Cast Time Slow - 50%
+
+        Scepter
+            Now has 2 charges. Potency increases over time. Crippling Dart cannot be cast on a target already under its effects.
+
+            Time For Max Bonus - 4
+            Maximum Bonus - 50%
+
+        Facet - Enfeebling Dart
+            Now reduces armor and magic resistance instead. Deals less damage, and has a shorter stun.
+
+            Damage Per Second - 2/4/6/8
+            Armor Reduction - 3/4/5/6
+            Magic Resistance Reduction - 15%/18%/21%/24%
+            Stun Duration - 0.5
+
+            Talents
+                10 - +1/+3% Armor/Magic Resistance Reduction
+
+    E - Mark
+        Unit target. Provides truesight and shared vision over the target enemy, decreases their status resistance, and deals a small amount of damage over time. If a target dies before the end of Mark, it moves to the nearest enemy within cast range for the remainder of the duration, replacing a shorter duration Mark if necessary.
+
+        Damage Per Second - 3
+        Duration - 8
+        Shared Vision - 150/250/350/450
+        Status Resistance Reduction - 8%/12%/16%/20%
+        Cast Range - 600
+        Manacost - 15
+        Cooldown - 10/9/8/7
+
+        Talents
+            10 - +1 Damage Per Second
+            15 - -2s Cooldown
+            20 - +5s Duration
+            25 - +20% Status Resistance Reduction
+
+        Shard
+            Increases cast range. Mark can be ground cast, inflicting its effects in an area around the target point. Has a reduced duration when used this way, and its effects are not transferred on the death of affected enemies.
+
+            Cast Range Increase - 50%
+            Ground Duration Reduction - 50%
+
+        Scepter
+            Decreases the manacost. When moving to a new unit, Mark has its duration refreshed. Mark can now stack.
+
+            Manacost - 10
+
+        Facet - None.
+
+    R - Grand Toxin
+        Passive. The next attack or spell on an enemy inflicts a massive damage over time effect. While the effect is active, the cooldown does not decrease. If the target dies while afflicted, the cooldown is reduced before resuming.
+
+        Damage Per Second - 20
+        Duration - 3/4/5
+        Cooldown - 8
+        Kill Cooldown Reduction - 50%
+
+        Talents
+            10 - +15% Kill Cooldown Reduction
+            15 - -1.5s Cooldown
+            20 - +1s Duration
+            25 - +10 Damage Per Second
+
+        Shard
+            If a target doesn't die during Grand Toxin, they receive a buff that increases the damage of the next Grand Toxin. Provides a grace period for the kill cooldown reduction.
+
+            Bonus Damage Per Second - 10
+            Death Grace Period - 1.5
+
+        Scepter
+            Whenever a creep dies under the effects of Grand Toxin, receive a permanent increase to every spell's damage over time. Heroes provide a larger bonus.
+
+                Not retroactive.
+
+            Creep Bonus - 0.25%
+            Hero Bonus - 1%
+
+        Facet - Big Game Hunter
+            Grand Toxin deals less damage to creeps, but increased damage to heroes.
+
+            Unit Damage Reduction - 30%
+            Boss Damage Bonus - 15%

@@ -1,0 +1,347 @@
+"DOTAAbilities"
+{
+	"troll_berserker_relentless"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/troll_berserker/relentless"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"MaxLevel"						"1"
+		"Innate"						"1"
+
+		"AbilityValues"
+		{
+			"health_for_max_bonus"		"20"
+			"max_status_resistance"		"50"
+			"max_magic_resistance"		"50"
+		}
+	}
+
+	"troll_berserker_rallying_cry"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/heroes/troll_berserker/rallying_cry"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"            "troll_berserker/rallying_cry"
+        "SpellImmunityType"             "SPELL_IMMUNE_ALLIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "AbilitySound"                  "Hero_Sven.WarCry"
+
+        "AbilityCastPoint"				"0.0"
+        "AbilityManaCost"				"20"
+
+		"HasShardUpgrade"				"1"
+		"HasScepterUpgrade"				"1"
+
+		"precache"
+		{
+			"particle"					"particles/units/heroes/hero_sven/sven_spell_warcry.vpcf"
+			"particle"					"particles/units/heroes/hero_sven/sven_warcry_buff.vpcf"
+			"particle"					"particles/units/heroes/hero_slardar/slardar_broken_shield.vpcf"
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
+		}
+
+        "AbilityValues"
+        {
+        	"radius"
+        	{
+        		"value"							"350 375 400 425"
+        	}
+        	"damage_per_unit"
+        	{
+        		"value"							"2 4 6 8"
+        		"special_bonus_unique_rallying_cry_talent_15"		"+3"
+        	}
+        	"armor_per_unit"
+        	{
+        		"value"							"0.5 1.0 1.5 2.0"
+        	}
+        	"talent_attack_speed_per_unit"
+        	{
+        		"special_bonus_unique_rallying_cry_talent_20"		"=5"
+        	}
+        	"shard_max_health_per_unit"
+        	{
+        		"special_bonus_shard"			"=10"
+        	}
+        	"shard_movespeed_per_unit"
+        	{
+        		"special_bonus_shard"			"=3"
+        	}
+			"talent_does_strong_dispel"
+			{
+				"special_bonus_unique_rallying_cry_talent_25"		"=1"
+			}
+			"facet_stun_duration"
+			{
+				"special_bonus_facet_rallying_cry_verbal_assault"	"=0.8 =1.2 =1.6 =2.0"
+			}
+        	"allied_effect"
+        	{
+        		"value"							"50"
+				"special_bonus_facet_rallying_cry_verbal_assault"	"-10"
+				"special_bonus_unique_rallying_cry_talent_10"		"+20"
+        	}
+        	"duration"
+        	{
+        		"value"							"5 6 7 8"
+        		"special_bonus_scepter"			"+2"
+        	}
+        	"AbilityCooldown"
+        	{
+        		"value"							"18"
+        		"special_bonus_shard"			"-2"
+        	}
+        	"scepter_status_resistance"
+        	{
+        		"special_bonus_scepter"			"=25"
+        	}
+        	"scepter_enemy_effect"
+        	{
+        		"value"							"50"
+				"special_bonus_unique_rallying_cry_talent_10"		"+20"
+				"RequiresScepter"				"1"
+        	}
+        }
+	}
+
+	"special_bonus_unique_rallying_cry_talent_10"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_rallying_cry_talent_15"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_rallying_cry_talent_20"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_rallying_cry_talent_25"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"troll_berserker_spiked_shield"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/heroes/troll_berserker/spiked_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "troll_berserker/spiked_shield"
+        "SpellImmunityType"             "SPELL_IMMUNE_ENEMIES_YES"
+
+		"HasShardUpgrade"				"1"
+		"HasScepterUpgrade"				"1"
+
+		"precache"
+		{
+			"particle"					"particles/items2_fx/mask_of_madness.vpcf"
+			"soundfile"					"soundevents/game_sounds_items.vsndevts"
+		}
+
+		"AbilityValues"
+		{
+			"base_block_chance"
+			{
+				"value"					"30"
+				"special_bonus_facet_spiked_shield_courserhide_shield"		"=20"
+			}
+			"block_chance_per_unit"
+			{
+				"value"					"3 4 5 6"
+				"special_bonus_unique_spiked_shield_talent_10"	"+1.5"
+				"special_bonus_facet_spiked_shield_courserhide_shield"		"=2.5 =3.125 =4.17 =5"
+			}
+			"maximum_block_chance"
+			{
+				"value"					"60"
+				"special_bonus_facet_spiked_shield_courserhide_shield"		"=45"
+			}
+			"damage_block"
+			{
+				"value"					"8 12 16 20"
+				"special_bonus_unique_spiked_shield_talent_15"	"+6"
+			}
+			"counter_attack_damage"
+			{
+				"value"					"16 20 24 28"
+				"special_bonus_unique_spiked_shield_talent_20"	"+15"
+			}
+			"counter_attack_cooldown"
+			{
+				"value"					"0.2"
+				"special_bonus_shard"	"=0.1"
+			}
+			"radius"
+			{
+				"value"					"300"
+			}
+
+			"shard_rallying_cry_multiplier"
+			{
+				"special_bonus_shard"	"=2"
+			}
+			
+			"AbilityCooldown"
+			{
+				"special_bonus_scepter"	"30"
+			}
+			"AbilityManaCost"
+			{
+				"special_bonus_scepter"	"30"
+			}
+			"scepter_duration"
+			{
+				"special_bonus_scepter"	"6"
+			}
+			"scepter_active_counter_attack_damage"
+			{
+				"value"					"50"
+				"special_bonus_unique_spiked_shield_talent_20"	"+15"
+				"RequiresScepter"		"1"
+			}
+
+			"talent_counter_attack_procs_modifiers"
+			{
+				"special_bonus_unique_spiked_shield_talent_25"	"=1"
+			}
+
+			"facet_block_all_damage_types"
+			{
+				"special_bonus_facet_spiked_shield_courserhide_shield"	"=1"
+			}
+		}
+	}
+
+	"special_bonus_unique_spiked_shield_talent_10"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_spiked_shield_talent_15"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_spiked_shield_talent_20"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_spiked_shield_talent_25"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"troll_berserker_brutal_strike"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "abilities/heroes/troll_berserker/brutal_strike"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "troll_berserker/brutal_strike"
+        "SpellImmunityType"             "SPELL_IMMUNE_ENEMIES_YES"
+
+		"HasShardUpgrade"				"1"
+		"HasScepterUpgrade"				"1"
+
+		"AbilityValues"
+		{
+			"crit_chance"
+			{
+				"value"						"15 20 25 30"
+				"special_bonus_unique_brutal_strike_talent_15"	"+7.5"
+			}
+			"crit_damage"
+			{
+				"value"						"175"
+				"special_bonus_unique_brutal_strike_talent_20"	"+35"
+				"special_bonus_facet_brutal_strike_calculated_brutality"	"+25"
+			}
+			"taunt_duration"
+			{
+				"value"						"0.5 0.75 1.0 1.25"
+				"special_bonus_unique_brutal_strike_talent_10"	"+0.25"
+			}
+			"taunt_cooldown"
+			{
+				"value"						"5"
+				"special_bonus_unique_brutal_strike_talent_25"	"-3.5"
+			}
+
+			"shard_crit_damage_per_stack"
+			{
+				"special_bonus_shard"		"=10"
+			}
+			"shard_max_stacks"
+			{
+				"special_bonus_shard"		"=5"
+			}
+			"shard_stack_duration"
+			{
+				"special_bonus_shard"		"=4"
+			}
+
+			"facet_crit_uses_cooldown"
+			{
+				"special_bonus_facet_brutal_strike_calculated_brutality"	"=1"
+			}
+			"facet_does_stun_instead"
+			{
+				"special_bonus_facet_brutal_strike_calculated_brutality"	"=1"
+			}
+			"AbilityCooldown"
+			{
+				"value"						"0 0 0 0"
+				"special_bonus_facet_brutal_strike_calculated_brutality"	"=5.5 =4.5 =3.5 =2.5"
+			}
+		}
+	}
+
+	"special_bonus_unique_brutal_strike_talent_10"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_brutal_strike_talent_15"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_brutal_strike_talent_20"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+
+	"special_bonus_unique_brutal_strike_talent_25"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
+	}
+}
